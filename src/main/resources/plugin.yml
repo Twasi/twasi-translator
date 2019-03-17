@@ -1,0 +1,7 @@
+name: "Translator"
+main: net.twasiplugin.translator.TranslationPlugin
+author: "Twasi Team"
+version: 1.0
+description: "Use common translation engines directly in your Twitch-Chat!"
+commands:
+  - translate

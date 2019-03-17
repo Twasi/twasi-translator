@@ -1,0 +1,6 @@
+twasi.translator.success=Übersetzt bedeutet das "%s" :)
+twasi.translator.warning.samelanguage=Der Sinn einer Übersetzung geht irgendwie verloren, wenn du in die Ausgangssprache übersetzt, %s LUL
+twasi.translator.warning.indenticaltext=Da gibt es nichts zu übersetzen, %s DansGame
+twasi.translator.warning.invalidinput=Mit dem Text, den du übersetzen willst, stimmt etwas nicht, %s WutFace
+twasi.translator.error=Es gab einen Fehler beim übersetzen BibleThump
+twasi.translator.helptext=Zum Übersetzen nutze "!translate (ZielSprache) [Text]". Lässt du die Zielsprache weg, übersetzt Twasi automatisch ins Deutsche. Verfügbare Zielsprachen: %s SeemsGood
