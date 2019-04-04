@@ -1,5 +1,5 @@
 twasi.translator.success=Übersetzt bedeutet das "%s" :)
-twasi.translator.warning.samelanguage=Der Sinn einer Übersetzung geht irgendwie verloren, wenn du in die Ausgangssprache übersetzt, %s LUL
+twasi.translator.warning.samelanguage=Der Sinn einer Übersetzung geht irgendwie verloren, wenn du in die Ausgangssprache übersetzt, %s LUL Bitte nutze !translate [Ländercode (de, en...)] [Text] :)
 twasi.translator.warning.indenticaltext=Da gibt es nichts zu übersetzen, %s DansGame
 twasi.translator.warning.invalidinput=Mit dem Text, den du übersetzen willst, stimmt etwas nicht, %s WutFace
 twasi.translator.error=Es gab einen Fehler beim übersetzen BibleThump

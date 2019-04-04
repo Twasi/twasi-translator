@@ -17,7 +17,7 @@ public class UserPlugin extends TwasiUserPlugin {
     private List<TwasiPluginCommand> cmds;
 
     public UserPlugin() {
-        this.allowedLanguages = Arrays.asList("de", "en", "fr");
+        this.allowedLanguages = Arrays.asList("de", "en", "fr", "sp", "ch");
         String languages = new Gson().toJson(allowedLanguages).replace("\\[", "").replace("\\]", "").replaceAll(",", ", ");
         cmds = Collections.singletonList(new TwasiPluginCommand(this) {
             @Override
@@ -39,9 +39,13 @@ public class UserPlugin extends TwasiUserPlugin {
                 }
                 BaseTranslation translation = new GoogleTranslatorTranslation(targetLanguage, query);
                 switch (translation.getState()) {
-                    case SUCCESS:
                     case IDENTICAL_TEXT:
+                        e.reply(getTranslation("twasi.translator.warning.indenticaltext", e.getSender().getDisplayName()));
+                        break;
                     case SAME_LANGUAGE:
+                        e.reply(getTranslation("twasi.translator.warning.samelanguage", e.getSender().getDisplayName()));
+                        break;
+                    case SUCCESS:
                         e.reply(getTranslation("twasi.translator.success", translation.getResult()));
                         break;
                     case ERROR:
